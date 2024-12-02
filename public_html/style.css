@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#door {
+    width: 100px;
+    cursor: pointer;
+}
+
+#market-sign {
+    font-size: 1.5rem;
+    color: black;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+}
+
+.music-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.music-btn:hover {
+    background-color: #0056b3;
+}
+
+#city-lights {
+    font-size: 2rem;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+#city-lights.on {
+    background: yellow;
+}
+
+#party-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
