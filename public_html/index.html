@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La città degli eventi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Benvenuti nella Città degli Eventi</h1>
+
+    <section id="municipio">
+        <h2>Il Municipio</h2>
+        <img id="door" src="door-closed.png" alt="Porta del Municipio">
+    </section>
+
+    <section id="mercato">
+        <h2>Il Mercato</h2>
+        <div id="market-sign">Mercato Locale</div>
+    </section>
+
+    <section id="piazza-musicale">
+        <h2>La Piazza Musicale</h2>
+        <button class="music-btn" data-sound="sound1.mp3">Do</button>
+        <button class="music-btn" data-sound="sound2.mp3">Re</button>
+        <button class="music-btn" data-sound="sound3.mp3">Mi</button>
+    </section>
+
+    <section id="illuminazione">
+        <h2>Luci della Città</h2>
+        <button id="light-switch">Accendi/Spegni</button>
+        <div id="city-lights" class="off">💡</div>
+    </section>
+
+    <section id="festa">
+        <h2>Organizza la Festa</h2>
+        <button id="party-button">Festa!</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
