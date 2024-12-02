@@ -8,3 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Aggiungi qui i tuoi eventi
 });
+
+function Municipio() {
+    var door = document.getElementById('door');
+    if (door.src.includes("door-closed.png")) {
+        door.src = "./Textures/door-open.png";
+    } else {
+        door.src = "./Textures/door-closed.png";
+    }
+}
