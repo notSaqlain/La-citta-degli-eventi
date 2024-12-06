@@ -17,3 +17,8 @@ function Municipio() {
         door.src = "./Textures/door-closed.png";
     }
 }
+
+function changeColor() {
+    const marketSign = document.getElementById('market-sign');
+    marketSign.style.color = 'red';
+}
