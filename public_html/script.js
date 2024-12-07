@@ -33,10 +33,19 @@ function Music(Id) {
         audio.play();
 }
 
-// Festa function to trigger confetti
+function lights() {
+    const lights = document.getElementById('illuminazione');
+    if (lights.style.backgroundColor == 'white') {
+        lights.style.backgroundColor = 'yellow';
+    }
+    else {
+        lights.style.backgroundColor = 'white';
+    }
+}
+
 function Festa() {
-    const partyButton = document.getElementById('party-button');
-    party.confetti(partyButton, {
+    const btn = document.getElementById('party-button');
+    party.confetti(btn, {
         count: party.variation.range(500, 500),
         size: party.variation.range(0.6, 1.4),
     });
