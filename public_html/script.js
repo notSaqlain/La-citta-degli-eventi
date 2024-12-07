@@ -33,10 +33,12 @@ function Music(Id) {
         audio.play();
 }
 
+// Festa function to trigger confetti
 function Festa() {
-    party.confetti(runButton, {
-        // Specify further (optional) configuration here.
-        count: party.variation.range(0, 100),
+    const partyButton = document.getElementById('party-button');
+    party.confetti(partyButton, {
+        count: party.variation.range(500, 500),
         size: party.variation.range(0.6, 1.4),
     });
 }
+
