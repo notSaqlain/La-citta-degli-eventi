@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islamabad</title>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,16 +15,21 @@
         <img id="door" src="./Textures/door-closed.png" alt="Porta del Municipio">
     </section>
 
-    <section id="mercato" onfocus="changeColor()">
+    <section id="mercato">
         <h2>Il Mercato</h2>
-        <div id="market-sign">Mercato Locale</div>
+        <div id="market-sign" onmouseover="changeColor()" onmouseout="changeColorBack()">Mercato Locale</div>
     </section>
 
     <section id="piazza-musicale">
         <h2>La Piazza Musicale</h2>
-        <button class="music-btn" data-sound="sound1.mp3">Do</button>
-        <button class="music-btn" data-sound="sound2.mp3">Re</button>
-        <button class="music-btn" data-sound="sound3.mp3">Mi</button>
+        <button class="music-btn" onclick="Music('audio1')">Do</button>
+        <audio id="audio1" src="./Audio/sound1.mp3""></audio>
+
+        <button class="music-btn" onclick="Music('audio2')">Re</button>
+        <audio id="audio2" src="./Audio/sound2.mp3"></audio>
+
+        <button class="music-btn" onclick="Music('audio3')">Mi</button>
+        <audio id="audio3" src="./Audio/sound3.mp3"></audio>
     </section>
 
     <section id="illuminazione">
@@ -34,7 +40,7 @@
 
     <section id="festa">
         <h2>Organizza la Festa</h2>
-        <button id="party-button">Festa!</button>
+        <button id="party-button" ondblclick="Festa()">Festa!</button>
     </section>
 
     <script src="script.js"></script>

@@ -20,5 +20,23 @@ function Municipio() {
 
 function changeColor() {
     const marketSign = document.getElementById('market-sign');
-    marketSign.style.color = 'red';
+    marketSign.style.backgroundColor = 'red';
+}
+
+function changeColorBack() {
+    const marketSign = document.getElementById('market-sign');
+    marketSign.style.backgroundColor = 'white';
+}
+
+function Music(Id) {
+    const audio = document.getElementById(Id);
+        audio.play();
+}
+
+function Festa() {
+    party.confetti(runButton, {
+        // Specify further (optional) configuration here.
+        count: party.variation.range(0, 100),
+        size: party.variation.range(0.6, 1.4),
+    });
 }
